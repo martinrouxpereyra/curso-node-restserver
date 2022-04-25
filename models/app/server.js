@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const router = require('../routes/user');
+const router = require('../../routes/user');
 
 class Server{
 
@@ -30,7 +30,7 @@ class Server{
 
     routes(){
 
-       this.app.use(this.usuariosPath, require('../routes/user')); 
+       this.app.use(this.usuariosPath, require('../../routes/user')); 
     }
 
     listen(){
