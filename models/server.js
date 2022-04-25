@@ -6,7 +6,7 @@ class Server{
 
     constructor(){
         this.app = express();
-        this.port = process.env.port;
+        this.port = process.env.PORT;
         this.usuariosPath = '/api/usuarios';
         //Middlewares
         this.middlewares();
@@ -34,7 +34,7 @@ class Server{
     }
 
     listen(){
-        this.app.listen(this.port, () =>{
+        this.app.listen(this.port , () =>{
             console.log('listening on port', this.port);
         });
     }
