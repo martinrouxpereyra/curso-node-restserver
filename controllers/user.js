@@ -1,4 +1,5 @@
-const {response, request} = require('express');
+const { response, request } = require('express');
+
 
 const usuariosGet = (req = request, res = response) => {
 
@@ -49,12 +50,11 @@ const usuariosDelete = (req, res = response) => {
 
 
 
+
 module.exports = {
     usuariosGet,
     usuariosPost,
     usuariosPut,
     usuariosPatch,
-    usuariosDelete
+    usuariosDelete,
 }
-
-
