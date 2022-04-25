@@ -21,11 +21,4 @@ router.delete('/',usuariosDelete);
 
 
 
-
-
-
-
-
-
-
 module.exports = router;
